@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westminster Philharmonic Orchestra</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="site-title">
+        <span class="title-main">Westminster Philharmonic Orchestra</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">&#9776;</button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#concerts">Concerts</a></li>
+          <li><a href="rehearsals.html">Rehearsals</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="section-inner">
+        <p class="next-label">Next Concert</p>
+        <h1>Spring Concert 2026</h1>
+        <p class="concert-details">Saturday 25 April 2026 &middot; 7:30pm</p>
+        <p class="concert-venue">St John's Smith Square, Westminster, London SW1P 3HA</p>
+        <div class="programme">
+          <h2>Programme</h2>
+          <ul>
+            <li>Elgar &mdash; <em>Enigma Variations</em></li>
+            <li>Brahms &mdash; <em>Symphony No. 2 in D major</em></li>
+          </ul>
+        </div>
+        <a href="#tickets" class="button">Book Tickets</a>
+      </div>
+    </section>
+
+    <section id="concerts">
+      <div class="section-inner">
+        <h2>Upcoming Concerts</h2>
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Programme</th>
+              <th>Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time datetime="2026-04-25">25 Apr 2026</time></td>
+              <td>Elgar &mdash; Enigma Variations; Brahms &mdash; Symphony No. 2</td>
+              <td>St John's Smith Square</td>
+            </tr>
+            <tr>
+              <td><time datetime="2026-11-07">7 Nov 2026</time></td>
+              <td>Programme to be announced</td>
+              <td>St John's Smith Square</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-inner">
+        <h2>About the Orchestra</h2>
+        <p>The Westminster Philharmonic Orchestra is an amateur orchestra based in central London, performing a full symphonic repertoire. We welcome musicians of all backgrounds who share a love of orchestral music.</p>
+        <p>We perform two or three concerts a year, typically at St John's Smith Square, and rehearse weekly throughout the season.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="section-inner">
+      <p>&copy; <span id="year"></span> Westminster Philharmonic Orchestra</p>
+      <p><a href="mailto:info@wpo.org.uk">info@wpo.org.uk</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
