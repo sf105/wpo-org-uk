@@ -493,6 +493,33 @@ table.programme td:nth-child(3) {
   font-size: 0.85rem;
 }
 
+/* ─── Concerts page ──────────────────────────────────────────────────────────── */
+
+#concerts h1 {
+  margin-bottom: 0.5rem;
+}
+
+#concerts > .section-inner > p {
+  margin-bottom: 0.75rem;
+}
+
+#concerts .schedule-table {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+#concerts .schedule-table th,
+#concerts .schedule-table td {
+  padding: 0.4rem 0.9rem;
+}
+
+#concerts .schedule-table th:first-child,
+#concerts .schedule-table td:first-child {
+  white-space: nowrap;
+}
+
+
 /* ─── General tables ─────────────────────────────────────────────────────────── */
 
 .schedule-table {
