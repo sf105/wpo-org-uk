@@ -515,7 +515,9 @@ table.programme td:nth-child(3) {
 }
 
 #concerts .schedule-table th:first-child,
-#concerts .schedule-table td:first-child {
+#concerts .schedule-table td:first-child,
+#concerts .schedule-table th:last-child,
+#concerts .schedule-table td:last-child {
   white-space: nowrap;
 }
 
