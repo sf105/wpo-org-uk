@@ -175,6 +175,28 @@ nav a[aria-current="page"] {
   line-height: 1;
 }
 
+/* ─── Social links ───────────────────────────────────────────────────────────── */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  order: 2;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.6rem 0.4rem;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
 /* ─── Submenu ────────────────────────────────────────────────────────────────── */
 
 .has-submenu {
