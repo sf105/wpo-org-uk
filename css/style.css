@@ -466,8 +466,8 @@ table.programme {
 table.programme th,
 table.programme td {
   text-align: left;
-  padding: 0.45rem 0.75rem;
-  border-bottom: 1px solid var(--colour-border);
+  padding: 0.1rem 0.75rem;
+  border-bottom: none;
   vertical-align: top;
 }
 
@@ -594,6 +594,28 @@ table.programme td:nth-child(3) {
   font-weight: 700;
   padding-top: 1.5rem;
   border-top: 2px solid var(--colour-border);
+}
+
+/* ─── Rehearsal date list ────────────────────────────────────────────────────── */
+
+#rehearsals .rehearsal-dates {
+  width: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+#rehearsals .rehearsal-dates td {
+  padding: 0.1rem 0.75rem 0.1rem 0;
+  border-bottom: none;
+}
+
+#rehearsals .rehearsal-dates tr:last-child td {
+  border-bottom: none;
+}
+
+#rehearsals .rehearsal-dates tbody tr:hover td {
+  background: none;
 }
 
 /* ─── Rehearsal section headings ─────────────────────────────────────────────── */
