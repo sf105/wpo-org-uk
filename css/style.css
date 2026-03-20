@@ -262,36 +262,26 @@ nav a[aria-current="page"] {
   position: absolute;
   bottom: 1.5rem;
   right: 1.5rem;
-  background: rgba(26, 39, 68, 0.78);
-  color: #fff;
+  margin: 0;
   padding: 1.25rem 1.5rem;
   max-width: 320px;
+  background: rgba(26, 39, 68, 0.78);
   border-left: 3px solid var(--colour-accent);
-  margin: 0;
 }
 
 .pull-quote-overlay p {
-  font-style: italic;
   font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 0.4rem;
   color: rgba(255, 255, 255, 0.92);
 }
 
 .pull-quote-overlay footer {
-  font-family: 'Merriweather Sans', Arial, sans-serif;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.65);
-  background: none;
-  padding: 0;
-  border: none;
-  box-shadow: none;
 }
 
 @media (max-width: 680px) {
-  .pull-quote-overlay {
-    display: none;
-  }
+  .pull-quote-overlay { display: none; }
 }
 
 /* ─── Hero ───────────────────────────────────────────────────────────────────── */
