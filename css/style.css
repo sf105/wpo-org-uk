@@ -518,32 +518,33 @@ table.programme td:nth-child(3) {
   margin-bottom: 0.75rem;
 }
 
-#previous-seasons .schedule-table th {
-  background: none;
-  color: var(--colour-muted);
-  font-weight: 600;
-  border-bottom: 1px solid var(--colour-border);
-}
-
-#concerts .schedule-table {
+#concerts .schedule-table,
+#previous-seasons .schedule-table {
   margin-top: 0;
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
 }
 
 #concerts .schedule-table th,
-#concerts .schedule-table td {
+#concerts .schedule-table td,
+#previous-seasons .schedule-table th,
+#previous-seasons .schedule-table td {
   padding: 0.4rem 0.9rem;
 }
 
 #concerts .schedule-table th:first-child,
 #concerts .schedule-table td:first-child,
 #concerts .schedule-table th:last-child,
-#concerts .schedule-table td:last-child {
+#concerts .schedule-table td:last-child,
+#previous-seasons .schedule-table th:first-child,
+#previous-seasons .schedule-table td:first-child,
+#previous-seasons .schedule-table th:last-child,
+#previous-seasons .schedule-table td:last-child {
   white-space: nowrap;
 }
 
-#concerts .schedule-table th {
+#concerts .schedule-table th,
+#previous-seasons .schedule-table th {
   background: none;
   color: var(--colour-muted);
   font-weight: 600;
