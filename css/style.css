@@ -576,6 +576,42 @@ table.programme td:nth-child(3) {
   color: var(--colour-muted);
 }
 
+.concert-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.concert-hero-info {
+  flex: 1;
+}
+
+.concert-hero-flyer {
+  position: relative;
+  flex: 0 0 auto;
+  width: 80%;
+  max-width: 640px;
+}
+
+.concert-hero-flyer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 680px) {
+  .concert-hero {
+    flex-direction: column;
+  }
+
+  .concert-hero-flyer {
+    width: 100%;
+    max-width: none;
+  }
+}
+
 /* ─── Concerts page ──────────────────────────────────────────────────────────── */
 
 #concerts h1 {
