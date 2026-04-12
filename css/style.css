@@ -847,6 +847,14 @@ table.programme td:nth-child(3) {
   font-size: 0.95rem;
 }
 
+/* ─── Support page ───────────────────────────────────────────────────────────── */
+
+.making-music-blurb {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
 /* ─── Footer ─────────────────────────────────────────────────────────────────── */
 
 body > footer {
