@@ -1,39 +1,46 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with this repository.
 
 ## Project
 
-Static website for wpo-org-uk. Plain HTML, CSS, and minimal JavaScript — no build tools, no framework, no site generator.
+Static website for the Westminster Philharmonic Orchestra (WPO). Plain HTML, CSS, and minimal JavaScript — no build tools, no framework, no site generator.
 
-## Purpose
+## Audience
 
-This is the website for the Westminster Philharmonic Orchestra
-
-The users include 
-- members of the orchestra looking for rehearsal and concert details
-- the public looking for details of a concert
-- curious people looking for information about the orchestra, including its history and people involved
-
+- Orchestra members — rehearsal schedules, concert details
+- The public — upcoming concerts, how to attend or support
+- Curious visitors — orchestra history, people, and how to get involved
 
 ## Development
 
-Open files directly in a browser, or serve locally to avoid CORS issues with any fetch calls:
+Serve locally to avoid CORS issues with any fetch calls:
 
 ```bash
 python3 -m http.server 8000
 ```
 
+Open `http://localhost:8000` in a browser. Files can also be opened directly, but fetch-based features may not work.
+
 ## Structure
 
-- `index.html` — site entry point
-- `css/` — stylesheets
-- `js/` — JavaScript files
-- `assets/` — images and other static files
+- `index.html` — home page / site entry point
+- `concerts.html` — upcoming concerts listing
+- `concerts/` — individual concert detail pages (e.g. `spring-2026-05-09.html`)
+- `rehearsals.html` — rehearsal schedule; `rehearsals.ics` — iCal feed
+- `about.html`, `history.html`, `people.html` — orchestra information
+- `members.html` — member resources
+- `support.html`, `contact.html` — supporting and contacting the orchestra
+- `css/style.css` — single stylesheet
+- `js/main.js` — minimal site-wide JavaScript (nav toggle etc.)
+- `assets/` — images, logos, icons
+- `fonts/` — web fonts
 
 ## Conventions
 
-- Prefer semantic HTML
-- Keep JavaScript minimal and dependency-free
-- CSS should be plain — no preprocessors
-- support desktop and mobile phone browsers
+- Semantic HTML throughout
+- Accessibility: use ARIA attributes and skip-links as established in existing pages
+- JavaScript: dependency-free, minimal, progressive enhancement only
+- CSS: plain, no preprocessors; single `style.css`
+- Support both desktop and mobile browsers
+- New concert pages go in `concerts/` following the `season-YYYY-MM-DD.html` naming pattern
