@@ -725,6 +725,15 @@ table.programme td:nth-child(3) {
   background: #edeae1;
 }
 
+.schedule-table tr.upcoming td {
+  font-weight: 600;
+}
+
+.schedule-table tr.upcoming td:first-child {
+  border-left: 3px solid var(--colour-accent);
+  padding-left: calc(0.9rem - 3px);
+}
+
 .schedule-table .table-section-heading td {
   background: #fff;
   color: var(--colour-text);
