@@ -24,6 +24,10 @@ Open `http://localhost:8000` in a browser. Files can also be opened directly, bu
 
 ## Structure
 
+Website files live in `docs/`. Other directories (`exported-from-wordpress/`, `making-music-logos/`) are support and administration material.
+
+Within `docs/`:
+
 - `index.html` — home page / site entry point
 - `concerts.html` — upcoming concerts listing
 - `concerts/` — individual concert detail pages (e.g. `spring-2026-05-09.html`)
