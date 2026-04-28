@@ -442,6 +442,14 @@ h3 {
   margin-bottom: 0.4rem;
 }
 
+h4 {
+  font-family: 'Merriweather Sans', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--colour-primary);
+  margin-bottom: 0.4rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -705,35 +713,41 @@ table.programme td:nth-child(3) {
 
 /* ─── Rehearsal date list ────────────────────────────────────────────────────── */
 
-#rehearsals .rehearsal-dates {
+#rehearsals .rehearsal-dates,
+#members .rehearsal-dates {
   width: auto;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 0.85rem;
 }
 
-#rehearsals .rehearsal-dates td {
+#rehearsals .rehearsal-dates td,
+#members .rehearsal-dates td {
   padding: 0.1rem 0.75rem 0.1rem 0;
   border-bottom: none;
 }
 
-#rehearsals .rehearsal-dates tr:last-child td {
+#rehearsals .rehearsal-dates tr:last-child td,
+#members .rehearsal-dates tr:last-child td {
   border-bottom: none;
 }
 
-#rehearsals .rehearsal-dates tbody tr:hover td {
+#rehearsals .rehearsal-dates tbody tr:hover td,
+#members .rehearsal-dates tbody tr:hover td {
   background: none;
 }
 
 /* ─── Rehearsal section headings ─────────────────────────────────────────────── */
 
-#rehearsals h3 {
+#rehearsals h3,
+#members h4 {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 2px solid var(--colour-accent);
 }
 
-#rehearsals h2 {
+#rehearsals h2,
+#members h3 {
   margin-top: 0;
   padding-top: 0;
   border-top: none;
