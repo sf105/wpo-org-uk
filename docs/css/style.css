@@ -713,7 +713,7 @@ table.programme td:nth-child(3) {
 
 /* ─── Rehearsal date list ────────────────────────────────────────────────────── */
 
-#rehearsals .rehearsal-dates,
+€ .rehearsal-dates,
 #members .rehearsal-dates {
   width: auto;
   margin-top: 0.5rem;
