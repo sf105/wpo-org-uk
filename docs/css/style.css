@@ -628,7 +628,19 @@ table.programme td:nth-child(3) {
 
 /* ─── Concerts page ──────────────────────────────────────────────────────────── */
 
-#concerts h1 {
+#intro {
+  border-bottom: none;
+}
+
+#concerts {
+  background: none;
+}
+
+#concerts > .section-inner {
+  padding-top: 1.5rem;
+}
+
+#concerts h2 {
   margin-bottom: 0.5rem;
 }
 
