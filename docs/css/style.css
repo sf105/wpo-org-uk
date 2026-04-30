@@ -400,6 +400,68 @@ nav a[aria-current="page"] {
   color: var(--colour-accent);
 }
 
+/* ─── Forms ──────────────────────────────────────────────────────────────────── */
+
+.membership-form {
+  max-width: 42rem;
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  align-items: start;
+  gap: 0.75rem 1rem;
+}
+
+.membership-form button {
+  grid-column: 2;
+}
+
+.form-field {
+  display: contents;
+}
+
+.form-field label {
+  padding-top: 0.55rem;
+}
+
+.form-field label {
+  font-family: 'Merriweather Sans', Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colour-primary);
+}
+
+.form-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--colour-muted);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1rem;
+  color: var(--colour-text);
+  background: var(--colour-bg);
+  border: 1.5px solid var(--colour-border);
+  border-radius: 4px;
+  transition: border-color 0.15s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--colour-accent);
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
 .hero .button:hover {
   color: #fff;
   border-color: #fff;

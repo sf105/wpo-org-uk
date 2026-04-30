@@ -74,8 +74,45 @@
         <h2>Join the Orchestra</h2>
         <p>The Westminster Philharmonic Orchestra welcomes experienced amateur musicians who share a passion for ambitious orchestral repertoire.
         We are actively seeking string players, although we'd love to hear from other instruments.</p>
-        <p>If you're interested contact our <a href="mailto:wposecretary@gmail.com?subject=joining">Membership Secretary</a></p>
-        
+
+        <form class="membership-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d810cddc-6606-4a35-ae82-2fa53f2af0df">
+          <input type="hidden" name="redirect" value="https://wpo.org.uk/membership-thanks.html">
+          <input type="hidden" name="subject" value="Membership enquiry">
+
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" autocomplete="phone" required>
+          </div>
+
+          <div class="form-field">
+            <label for="instrument">Instrument(s)</label>
+            <textarea id="instrument" name="instrument" rows="2" required></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="source">How did you hear about us? <span class="form-optional">(optional)</span></label>
+            <textarea id="source" name="instrument" rows="2"></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Anything else <span class="form-optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="2"></textarea>
+          </div>
+
+          <button class="button" type="submit">Send enquiry</button>
+        </form>
+
         <h2>Publicity</h2>
         <p><a href="assets/WPO-Flyer-2026-05-09-SMALL.jpg" download>Download the flyer for our next concert</a></p>
 
