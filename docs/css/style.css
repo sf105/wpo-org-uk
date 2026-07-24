@@ -333,6 +333,11 @@ nav a[aria-current="page"] {
   margin-bottom: 1rem;
 }
 
+.concert-overlay-tickets a {
+  color: #fff;
+  font-weight: 700;
+}
+
 .pull-quote-overlay {
   position: absolute;
   bottom: 1.5rem;
