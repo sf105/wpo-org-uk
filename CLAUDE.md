@@ -36,7 +36,7 @@ Within `docs/`:
 
 - `index.html` — home page; includes upcoming concerts listing
 - `support.html`, `contact.html` — supporting and contacting the orchestra
-- `concerts/YYYY-MM-DD/` — one subdirectory per concert; the detail page (if present) is named `concert-YYYY-MM-DD.html`; assets (flyers, programme notes) live alongside it. Some directories contain only flyer images with no HTML page — that is valid.
+- `concerts/YYYY-MM-DD/` — one subdirectory per concert; the detail page (if present) is named `concert-YYYY-MM-DD.html`; assets (flyers, programme notes) live alongside it. Some directories contain only flyer images with no HTML page — that is valid. A detail page can also exist before flyer/programme-notes assets are ready — omit the `concert-hero-flyer` image and the programme notes link until they're supplied, rather than inventing placeholders.
 - `css/style.css` — single stylesheet
 - `js/main.js` — minimal site-wide JavaScript (nav toggle etc.)
 - `assets/` — images, logos, icons; `assets/images/` for photos; `assets/agm/YYYY/` for AGM PDFs organised by year
@@ -71,3 +71,4 @@ Each section (`about/`, `players/`) has a sub-nav bar that appears on every page
 - CSS: plain, no preprocessors; single `style.css`
 - Support both desktop and mobile browsers
 - New concert pages go in `concerts/YYYY-MM-DD/` following the existing subdirectory pattern
+- Ticket sales are external (e.g. wegottickets.com); link to them with plain text links (e.g. "Book tickets") near the venue/date details — on the home page's Next Concert overlay (`.concert-overlay-tickets`) and on concert detail pages — rather than building a styled button component
