@@ -14,13 +14,15 @@ Static website for the Westminster Philharmonic Orchestra (WPO). Plain HTML, CSS
 
 ## Development
 
-Serve locally to avoid CORS issues with any fetch calls:
+A local webserver may already be running (commonly on port 8080, not necessarily 8000) — check before starting a new one, e.g. `curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080/index.html`.
+
+Otherwise, serve locally to avoid CORS issues with any fetch calls:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000` in a browser. Files can also be opened directly, but fetch-based features may not work.
+Open `http://localhost:8000` (or whichever port is in use) in a browser. Files can also be opened directly, but fetch-based features may not work.
 
 ## Deployment
 
@@ -72,3 +74,4 @@ Each section (`about/`, `players/`) has a sub-nav bar that appears on every page
 - Support both desktop and mobile browsers
 - New concert pages go in `concerts/YYYY-MM-DD/` following the existing subdirectory pattern
 - Ticket sales are external (e.g. wegottickets.com); link to them with plain text links (e.g. "Book tickets") near the venue/date details — on the home page's Next Concert overlay (`.concert-overlay-tickets`) and on concert detail pages — rather than building a styled button component
+- Once a flyer image exists for a concert, add a thumbnail link to it in the relevant schedule table (home page season table, `about/previous-seasons.html`): an extra `<td>` per row containing `<a href="...concert-flyer-YYYY-MM-DD.jpg" target="_blank"><img src="...-preview.jpg" alt="Concert flyer, D Month YYYY" height="60"></a>`, even though the `<thead>` only lists Date/Programme/Venue. Rows without a flyer yet simply omit the cell.
